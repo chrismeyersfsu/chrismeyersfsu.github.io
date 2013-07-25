@@ -94,6 +94,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
+.project .screenshots img {
+	max-width: 100%;
+}
+
 .project p {
 	padding: 0px 100px 0px 100px;
 }
