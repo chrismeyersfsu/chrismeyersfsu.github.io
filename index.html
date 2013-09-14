@@ -60,6 +60,44 @@
 	</div>
   </div> <!-- row2 -->
   </div> <!-- fluid-container -->
+  
+
+  <div class="row-fluid">
+	<div class="span10 offset1">
+  <hr/><br />
+		<h1>Upstream Contributions</h1>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span10 offset1">
+	  <h2><a href="http://gevent.org/">gevent</a></h2>
+	  <p>For performance reasons I used a unix socket as the IPC between gevent and nginx instead of the default network socket. This resulted in a logging failure when trying to query the remote host name of the socket. I recomoneded a quick fix to this solution that would return UNIX_SOCKET for the hostname when the hostname could not be determined.</p>
+	  <a href="https://github.com/surfly/gevent/pull/295">Reported</a><br />
+	  <a href="https://github.com/surfly/gevent/commit/82f50339982b4a6d4095ce8bfe45dd7aeb29311a">Accepted</a>
+	</div> <!-- contributation -->
+  </div> <!-- fluid container -->
+  
+  <br />
+
+  <div class="row-fluid">
+    <div class="span10 offset1">
+	  <h2><a href="https://github.com/YenTheFirst/card_scan">Magic The Gathering Card Scanner</a></h2>
+	  <p>Identified boostrap problems with the project i.e. magic the gathering card data, sql database schema initialization, and configuration parameter errors. Provided a wiki (documentation) to walk users through how to generate the required data, generated initial database schema automatically, and fixed configuration parameters.</p>
+	  <a href="https://github.com/YenTheFirst/card_scan/commits?author=chrismeyersfsu">Commits</a>
+	</div> <!-- contributation -->
+  </div> <!-- fluid container -->
+
+  <br />
+
+  <div class="row-fluid">
+    <div class="span10 offset1">
+	  <h2><a href="http://autobahn.ws/android">Autobahn Android</a></h2>
+	  <p>Pinpointed single protocol specification deviation from websocket RFC, resulting in the Autobahn client for Android not working with an RFC correct server implementation libwebsockets. Provided a fix for this issue that when a single (vs. multipled) protocol is specified do not add a comma to the end.</p>
+	  <a href="https://github.com/tavendo/AutobahnAndroid/pull/46">Reported</a><br />
+	  Acceptance Pending
+	</div> <!-- contributation -->
+  </div> <!-- fluid container -->
+
 
   <script src="js/bootstrap.min.js"></script>
 </body>
