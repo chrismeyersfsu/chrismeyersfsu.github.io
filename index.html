@@ -70,6 +70,17 @@
   </div>
   <div class="row-fluid">
     <div class="span10 offset1">
+	  <h2><a href="http://lttng.org/">lttng</a></h2>
+          <p>Used lttng-ust to log data traces that could later be used to verify the corretness of my system, without adding addition overhead (&lt;1%). Observed that the logged output was garbled. Constructed a minimal, concise, multi-threaded test case that was reliable in triggering the garbled log. With this test case, the author of the code was able to find and fix the problem.</p>
+	<a href="http://comments.gmane.org/gmane.linux.kernel.tracing.lttng.devel/640">Reported</a><br />
+	<a href="http://comments.gmane.org/gmane.linux.kernel.tracing.lttng.devel/645">Fixed</a><br />
+	</div> <!-- contributation -->
+  </div> <!-- fluid container -->
+  
+  <br />
+ 
+  <div class="row-fluid">
+    <div class="span10 offset1">
 	  <h2><a href="http://gevent.org/">gevent</a></h2>
 	  <p>For performance reasons I used a unix socket as the IPC between gevent and nginx instead of the default network socket. This resulted in a logging failure when trying to query the remote host name of the socket. I recomoneded a quick fix to this solution that would return UNIX_SOCKET for the hostname when the hostname could not be determined.</p>
 	  <a href="https://github.com/surfly/gevent/pull/295">Reported</a><br />
